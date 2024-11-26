@@ -24,7 +24,7 @@ function ToggleBox() {
       <button
         type="button"
         onClick={() => setIsVisible((prev) => !prev)}
-        className="text-white"
+        className="rounded-lg bg-white px-4 py-2 text-sm"
       >
         {isVisible ? "Hide" : "Show"}
       </button>
