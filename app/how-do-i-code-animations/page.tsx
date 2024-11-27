@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function HowDoICodeAnimations() {
+export default function HowDoICodeAnimationsPage() {
   return (
     <>
       <h1 className="text-4xl text-white">How do I code animations</h1>

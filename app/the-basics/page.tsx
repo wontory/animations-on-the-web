@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function TheBasics() {
+export default function TheBasicsPage() {
   return (
     <>
       <h1 className="text-4xl text-white">The Basics</h1>
