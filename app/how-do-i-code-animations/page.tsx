@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { AppStoreLikeTransition } from "~/components/how-do-i-code-animations/app-store-like-transition";
 import { Drag } from "~/components/how-do-i-code-animations/drag";
 import { LayoutAnimations } from "~/components/how-do-i-code-animations/layout-animations";
@@ -7,9 +9,14 @@ import { MotionValue } from "~/components/how-do-i-code-animations/motion-value"
 import { Tabs } from "~/components/how-do-i-code-animations/tabs";
 import { ToggleHeight } from "~/components/how-do-i-code-animations/toggle-height";
 
+export const metadata: Metadata = {
+  title: "How do I code animations",
+  description: "",
+};
+
 export default function HowDoICodeAnimations() {
   return (
-    <div className="grid min-h-dvh max-w-dvw items-center justify-items-center gap-20 bg-black py-20 text-center">
+    <>
       <h1 className="text-4xl text-white">How do I code animations</h1>
       <section className="flex flex-col items-center gap-4">
         <h2 className="text-2xl text-white">Layout animations</h2>
@@ -40,6 +47,6 @@ export default function HowDoICodeAnimations() {
         <h2 className="text-2xl text-white">App Store-like transition</h2>
         <AppStoreLikeTransition />
       </section>
-    </div>
+    </>
   );
 }

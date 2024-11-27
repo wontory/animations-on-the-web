@@ -29,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="grid min-h-dvh max-w-dvw items-center justify-items-center gap-20 bg-black py-20 text-center">
+          {children}
+        </div>
       </body>
     </html>
   );
