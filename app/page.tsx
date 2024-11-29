@@ -32,11 +32,6 @@ export default function HomePage() {
               Trash interaction
             </Link>
           </li>
-          <li>
-            <Link href="/coding-animations/animating-in-public">
-              Animating in public
-            </Link>
-          </li>
         </ul>
       </section>
     </>
