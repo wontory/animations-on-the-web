@@ -12,7 +12,6 @@ export default function FeedbackPopoverPage() {
     <>
       <h1 className="text-4xl text-white">Feedback popover</h1>
       <section className="flex flex-col items-center gap-4">
-        <h2 className="text-2xl text-white">Button to popover</h2>
         <FeedbackPopover />
       </section>
     </>
