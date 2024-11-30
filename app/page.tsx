@@ -34,6 +34,18 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
+      <section className="flex flex-col items-center gap-4">
+        <h2 className="text-2xl text-white">
+          <Link href="/good-vs-great-animations">Good vs Great animations</Link>
+        </h2>
+        <ul className="flex flex-col gap-2 text-white">
+          <li>
+            <Link href="/good-vs-great-animations/accessibility">
+              Accessibility
+            </Link>
+          </li>
+        </ul>
+      </section>
     </>
   );
 }
