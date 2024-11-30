@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
-import { AnimatedBox } from "~/components/the-basics/anatomy-of-an-animation";
+import { AnimatedBox } from "~/components/coding-animations/the-basics/anatomy-of-an-animation";
 import {
   CopyButton,
   SmoothButton,
   ToggleBox,
-} from "~/components/the-basics/exit-animations";
+} from "~/components/coding-animations/the-basics/exit-animations";
 import {
   EasingAnimatedBox,
   SpringAnimatedBox,
-} from "~/components/the-basics/transition-prop";
-import { RefactoredSmoothButton } from "~/components/the-basics/variants";
+} from "~/components/coding-animations/the-basics/transition-prop";
+import { RefactoredSmoothButton } from "~/components/coding-animations/the-basics/variants";
 
 export const metadata: Metadata = {
   title: "The Basics",

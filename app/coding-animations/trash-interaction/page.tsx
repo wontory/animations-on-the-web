@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { TrashAnimation } from "~/components/trash-interaction/trash-animation";
+import { TrashAnimation } from "~/components/coding-animations/trash-interaction/trash-animation";
 
 export const metadata: Metadata = {
   title: "Trash interaction",

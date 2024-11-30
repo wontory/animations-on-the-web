@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { FeedbackPopover } from "~/components/feedback-popover/button-to-popover";
+import { FeedbackPopover } from "~/components/coding-animations/feedback-popover/button-to-popover";
 
 export const metadata: Metadata = {
   title: "Feedback popover",

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { MultiStepComponent } from "~/components/accessibility/accessibility";
+import { MultiStepComponent } from "~/components/good-vs-great-animations/accessibility/accessibility";
 
 export const metadata: Metadata = {
   title: "Accessibility",

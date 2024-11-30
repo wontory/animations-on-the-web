@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { MultiStepComponent } from "~/components/multi-step-component/step-animation";
+import { MultiStepComponent } from "~/components/coding-animations/multi-step-component/step-animation";
 
 export const metadata: Metadata = {
   title: "Multi-step component",

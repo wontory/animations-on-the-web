@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import { AppStoreLikeTransition } from "~/components/how-do-i-code-animations/app-store-like-transition";
-import { Drag } from "~/components/how-do-i-code-animations/drag";
-import { LayoutAnimations } from "~/components/how-do-i-code-animations/layout-animations";
-import { LayoutId } from "~/components/how-do-i-code-animations/layout-id";
-import { Modals } from "~/components/how-do-i-code-animations/modals";
-import { MotionValue } from "~/components/how-do-i-code-animations/motion-value";
-import { Tabs } from "~/components/how-do-i-code-animations/tabs";
-import { ToggleHeight } from "~/components/how-do-i-code-animations/toggle-height";
+import { AppStoreLikeTransition } from "~/components/coding-animations/how-do-i-code-animations/app-store-like-transition";
+import { Drag } from "~/components/coding-animations/how-do-i-code-animations/drag";
+import { LayoutAnimations } from "~/components/coding-animations/how-do-i-code-animations/layout-animations";
+import { LayoutId } from "~/components/coding-animations/how-do-i-code-animations/layout-id";
+import { Modals } from "~/components/coding-animations/how-do-i-code-animations/modals";
+import { MotionValue } from "~/components/coding-animations/how-do-i-code-animations/motion-value";
+import { Tabs } from "~/components/coding-animations/how-do-i-code-animations/tabs";
+import { ToggleHeight } from "~/components/coding-animations/how-do-i-code-animations/toggle-height";
 
 export const metadata: Metadata = {
   title: "How do I code animations",

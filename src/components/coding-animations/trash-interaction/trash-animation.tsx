@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import {
   TrashBack,
   TrashFront,
-} from "~/components/trash-interaction/trash-assets";
+} from "~/components/coding-animations/trash-interaction/trash-assets";
 
 const IMAGES = ["japan", "jungle", "new-york", "desert"];
 
