@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Coding animations",
+  description: "",
+};
 
 export default function CodingAnimationsPage() {
   return (

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function TrashInteraction() {
+export default function TrashInteractionPage() {
   return (
     <>
       <h1 className="text-4xl text-white">Trash interaction</h1>
