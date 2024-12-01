@@ -3,8 +3,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 
-import { cn } from "~/utils/cn";
-
 function Ring() {
   const [isSilent, setIsSilent] = useState(false);
 
@@ -19,7 +17,7 @@ function Ring() {
 
   return (
     <motion.div
-      className={cn("relative flex h-7 items-center justify-between px-2.5")}
+      className="relative flex h-7 items-center justify-between px-2.5"
       animate={{ width: isSilent ? 148 : 128 }}
       transition={{ type: "spring", bounce: 0.5 }}
     >
