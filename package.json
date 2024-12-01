@@ -26,7 +26,8 @@
     "react-dom": "^18",
     "react-use-measure": "^2.1.1",
     "tailwind-merge": "^2.5.5",
-    "usehooks-ts": "^3.1.0"
+    "usehooks-ts": "^3.1.0",
+    "vaul": "^1.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
