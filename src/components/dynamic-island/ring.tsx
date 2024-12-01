@@ -5,18 +5,24 @@ import { useEffect, useState } from "react";
 
 function Ring() {
   const [isSilent, setIsSilent] = useState(false);
+  const [firstTime, setFirstTime] = useState(true);
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: This effect is intended to run every 2 seconds
   useEffect(() => {
-    const id = setTimeout(() => {
-      setIsSilent((s) => !s);
-    }, 2000);
+    const id = setTimeout(
+      () => {
+        setFirstTime(false);
+        setIsSilent((s) => !s);
+      },
+      firstTime ? 1000 : 2000,
+    );
 
     return () => clearTimeout(id);
-  }, [isSilent]);
+  }, [isSilent, firstTime]);
 
   return (
     <motion.div
+      initial={false}
       className="relative flex h-7 items-center justify-between px-2.5"
       animate={{ width: isSilent ? 148 : 128 }}
       transition={{ type: "spring", bounce: 0.5 }}
@@ -57,23 +63,21 @@ function Ring() {
           />
         </svg>
         <div className="absolute inset-0">
-          {isSilent ? (
-            <div className="-translate-y-[5px] absolute inset-0 h-5 translate-x-[5px] rotate-[-40deg]">
-              <motion.div
-                animate={{ height: isSilent ? 16 : 0 }}
-                transition={{
-                  ease: "easeInOut",
-                  duration: isSilent ? 0.125 : 0.05,
-                  delay: isSilent ? 0.15 : 0,
-                }}
-                className="w-fit rounded-full"
-              >
-                <div className="flex h-full w-[3px] items-center justify-center rounded-full bg-[#FD4F30]">
-                  <div className="h-full w-[0.75px] rounded-full bg-white" />
-                </div>
-              </motion.div>
-            </div>
-          ) : null}
+          <div className="-translate-y-[5px] absolute inset-0 h-5 translate-x-[5px] rotate-[-40deg]">
+            <motion.div
+              animate={{ height: isSilent ? 16 : 0 }}
+              transition={{
+                ease: "easeInOut",
+                duration: isSilent ? 0.125 : 0.05,
+                delay: isSilent ? 0.15 : 0,
+              }}
+              className="w-fit rounded-full"
+            >
+              <div className="flex h-full w-[3px] items-center justify-center rounded-full bg-[#FD4F30]">
+                <div className="h-full w-[0.75px] rounded-full bg-white" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </motion.div>
       <div className="ml-auto flex items-center">
