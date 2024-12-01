@@ -46,6 +46,16 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
+      <section className="flex flex-col items-center gap-4">
+        <h2 className="text-2xl text-white">
+          <Link href="/family-drawer">Family Drawer</Link>
+        </h2>
+      </section>
+      <section className="flex flex-col items-center gap-4">
+        <h2 className="text-2xl text-white">
+          <Link href="/dynamic-island">Dynamic Island</Link>
+        </h2>
+      </section>
     </>
   );
 }
